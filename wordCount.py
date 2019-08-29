@@ -7,7 +7,7 @@ Lab 01 Python Intro
 """
 
 import sys  # sys lib used to take 2+ parameters
-import re  # regular expression lib used to remove unwanted characters
+import re  # regular expression lib used to remove set character boundaries
 
 freq = {}  # empty dictionary
 
