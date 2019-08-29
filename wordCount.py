@@ -19,7 +19,7 @@ readinput = inputf.read().lower()  # read input file and convert all words to lo
 allwords = re.findall("[a-zA-Z]+", readinput)  # creates list of all words removing the unwanted characters
 
 for word in allwords:
-    count = freq.get(word, 0)  # default value of 0 in order to display count (avoid mismatch)
+    count = freq.get(word, 0)  # default value of 0 in order to display count (avoid mismatch error)
     freq[word] = count + 1
 
 freqlist = freq.keys()
