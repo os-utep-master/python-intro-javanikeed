@@ -16,7 +16,7 @@ outputf = open(sys.argv[2], 'w')
 
 readinput = inputf.read().lower()  # read input file and convert all words to lowercase
 
-allwords = re.findall("[a-zA-Z]+", readinput)  # creates list of all words removing the unwanted characters
+allwords = re.findall("[a-zA-Z]+", readinput)  # creates list of all words removing non-alphabetic characters
 
 for word in allwords:
     count = freq.get(word, 0)  # default value of 0 in order to display count (avoid mismatch error)
