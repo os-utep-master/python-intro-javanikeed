@@ -26,3 +26,5 @@ freqlist = freq.keys()
 
 for words in sorted(freqlist):
     outputf.write(words + " " + str(freq[words]) + "\n")
+
+    
